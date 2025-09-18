@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Secure Horizon Retirement Planning</title>
+    <meta name="description" content="Contact Secure Horizon for personalized retirement planning consultation. Schedule a call or send a message to our experienced retirement planning team.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Secure Horizon</a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="retirement-planning.html">Retirement Planning</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p>Ready to start your retirement planning journey with confidence?</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info fade-in">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <h3>Email</h3>
+                                    <a href="mailto:contact@securehorizon.com">contact@securehorizon.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <h3>Phone</h3>
+                                    <p>(555) 123-4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <h3>Office</h3>
+                                    <p>123 Financial Plaza<br>Springfield, IL 62701</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="office-hours">
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+                            Saturday: By appointment only<br>
+                            Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-forms fade-in">
+                        <form class="contact-form" novalidate>
+                            <h2>Send us a Message</h2>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                                    <span class="error-message" id="first-name-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" name="last-name" required>
+                                    <span class="error-message" id="last-name-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" required>
+                                <span class="error-message" id="contact-email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone (Optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-message">How can we help you?</label>
+                                <textarea id="contact-message" name="message" rows="5" required placeholder="Tell us about your retirement planning needs and any specific questions you have..."></textarea>
+                                <span class="error-message" id="contact-message-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+
+                        <div class="callback-section">
+                            <h3>Prefer to Schedule a Call?</h3>
+                            <p>Let us know when you'd like to chat, and we'll reach out to you.</p>
+                            
+                            <button class="btn-secondary" id="callback-btn">Request a Callback</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="privacy-note fade-in">
+                    <p><strong>Privacy Commitment:</strong> All messages and consultations are completely confidential. We will never share your contact information or personal details with third parties. Our communications are secure and your privacy is our priority.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Callback Modal -->
+    <div class="modal" id="callback-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close dialog">&times;</button>
+            <h3>Schedule a Callback</h3>
+            <form class="callback-form" novalidate>
+                <div class="form-group">
+                    <label for="callback-name">Name</label>
+                    <input type="text" id="callback-name" name="name" required>
+                    <span class="error-message" id="callback-name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="callback-email">Email</label>
+                    <input type="email" id="callback-email" name="email" required>
+                    <span class="error-message" id="callback-email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="callback-phone">Phone Number</label>
+                    <input type="tel" id="callback-phone" name="phone" required>
+                    <span class="error-message" id="callback-phone-error"></span>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Date</label>
+                        <input type="date" id="preferred-date" name="date" required>
+                        <span class="error-message" id="preferred-date-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferred-time">Preferred Time</label>
+                        <select id="preferred-time" name="time" required>
+                            <option value="">Select a time</option>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                        </select>
+                        <span class="error-message" id="preferred-time-error"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="callback-notes">Brief description of what you'd like to discuss (Optional)</label>
+                    <textarea id="callback-notes" name="notes" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary">Schedule Callback</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Secure Horizon — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
